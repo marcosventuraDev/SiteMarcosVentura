@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+
+    display: flex;
+    border: 1px solid red;
+}
+
+header .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+
+ion-icon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+}
+
+.ion-bar {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.info {
+
+    background-color: rgb(240, 239, 239);
+    position: absolute;
+    bottom: -70px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info ion-icon {
+    width: 25px;
+    color: darkblue;
+    
+}
+
+.info ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.info ul li {
+    align-items: center;
+    position: relative;
+    width: 25%;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.info ul li a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.bar {
+    height: 50%;
+    width: 1px;
+    background: darkblue;
+    position: absolute;
+    right: 0;
+   top: 35px;
+}
+
+/*********SECTION Why************/
+
+section{
+    padding-top: 100px;
+}
+
+section h1{
+    text-align: center;
+}
+
+.why{
+    
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+    max-width: 600px;
+}
+
+.why div{
+    padding:0 30px;
+}
+
+.arrow{
+    margin-top: 20px;
+}
+
+
+.arrowbase, .arrowbaseCenter{
+    width: 50%;
+    position: absolute;
+    background-color: rgb(190, 189, 189);
+    height: 1px;
+    
+}
+.arrowbaseCenter{
+    width: 200%;
+}
+
+
+.opLeft .arrowbase{
+    left: 50%;
+}
+
+.opCenter .arrowbaseCenter{
+    left: -100px;
+}
+
+.opRight .arrowbase{
+    left: 0;
+}
+
+.opCenter, .opRight, .opLeft{
+    position: relative;
+}
+
+
+/*circle*/
+
+.circlebase{
+    height: 15px;
+    width: 15px;
+    border: 1px solid rgb(190, 189, 189);
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -9px;
+    left: 50%;
+    z-index: 1;
+
+
+}
