@@ -3,43 +3,50 @@
     margin: 0;
 }
 
-header {
-    position: relative;
-
-    display: flex;
-    border: 1px solid red;
-}
-
-header .logo {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
 .container {
     max-width: 1240px;
     margin: 0 auto;
+
 }
 
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.logo {
+    left: 10px;
+    top: 10px;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
 
 ion-icon {
     width: 50px;
     height: 50px;
     color: #fff;
-
 }
 
 .ion-bar {
-    position: absolute;
     z-index: 1;
     right: 10px;
     top: 10px;
     color: #fff;
     cursor: pointer;
-}
-
-.logo img {
-    width: 100px;
+    padding: 10px;
 }
 
 .info {
@@ -55,7 +62,6 @@ ion-icon {
 .info ion-icon {
     width: 25px;
     color: darkblue;
-    
 }
 
 .info ul {
@@ -84,70 +90,72 @@ ion-icon {
     background: darkblue;
     position: absolute;
     right: 0;
-   top: 35px;
+    top: 35px;
 }
 
 /*********SECTION Why************/
 
-section{
+section {
     padding-top: 100px;
 }
 
-section h1{
+section h1 {
     text-align: center;
 }
 
-.why{
-    
+.why {
+
     margin: 50px auto;
     display: flex;
     justify-content: space-around;
     position: relative;
-    
+
     max-width: 600px;
 }
 
-.why div{
-    padding:0 30px;
+.why div {
+    padding: 0 30px;
 }
 
-.arrow{
+.arrow {
     margin-top: 20px;
 }
 
-
-.arrowbase, .arrowbaseCenter{
+.arrowbase,
+.arrowbaseCenter {
     width: 50%;
     position: absolute;
     background-color: rgb(190, 189, 189);
     height: 1px;
-    
 }
-.arrowbaseCenter{
+
+.arrowbaseCenter {
     width: 200%;
 }
 
 
-.opLeft .arrowbase{
+.opLeft .arrowbase {
     left: 50%;
 }
 
-.opCenter .arrowbaseCenter{
+.opCenter .arrowbaseCenter {
     left: -100px;
 }
 
-.opRight .arrowbase{
+.opRight .arrowbase {
     left: 0;
 }
 
-.opCenter, .opRight, .opLeft{
+.opCenter,
+.opRight,
+.opLeft {
     position: relative;
 }
 
 
-/*circle*/
+/*Info Why circle*/
 
-.circlebase{
+.circlebase {
     height: 15px;
     width: 15px;
     border: 1px solid rgb(190, 189, 189);
@@ -157,6 +165,62 @@ section h1{
     bottom: -9px;
     left: 50%;
     z-index: 1;
+}
+
+/*Session info*/
+.grid-container {
+    display: flex;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+}
+
+.grid-container>div {
+    width: 50%;
+    padding: 0 10%;
+ }
+
+.imgsList {
+    position: relative;
+}
 
 
+.imgsList img {
+    width: 100%;
+    box-shadow: -10px 10px 30px;
+}
+
+.imgsList>div {
+    position: absolute;
+}
+
+.img1 img {
+    margin: 30px 0 0 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.img2 img {
+    margin: 0 50px 0 50px;
+    width: 280px;
+    height: 250px;
+    
+}
+
+.img3 img {
+    margin: 60px 0 0 100px;
+    width: 300px;
+    height: 200px;
+
+}
+.teste{
+    position: relative;
+    border: 1px solid red;
+
+    height:150px;
+}
+.teste > img{
+    position: absolute;
+    height: 150px;
 }
