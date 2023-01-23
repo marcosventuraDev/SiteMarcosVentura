@@ -93,6 +93,7 @@ ion-icon {
     top: 35px;
 }
 
+
 /*********SECTION Why************/
 
 section {
@@ -172,18 +173,87 @@ section h1 {
     display: flex;
     grid-template-columns: 50% 50%;
     width: 100%;
-    height: 300px;
+    height: 18em;
+ 
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
     flex-direction: row;
+   
+    background-color: red;
 }
 
 .grid-container>div {
     width: 50%;
     padding: 0 10%;
+    position: relative;
+    max-width: 600px;
+    max-height: 600px;  
+
  }
 
-.imgsList {
-    position: relative;
+
+
+ input[type=radio]{
+    display: none;
+ }
+ 
+ .cards{
+    margin-bottom: 20px;
+ }
+ .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
+ .card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+ }
+
+ #item-1:checked ~ .cards #img-3,
+ #item-2:checked ~ .cards #img-1,
+ #item-3:checked ~ .cards #img-2{
+    transform: translate(-20%,-20%) scale(0.8);
+
+    z-index: -1;
+ }
+ #item-1:checked ~ .cards #img-2,
+ #item-2:checked ~ .cards #img-3,
+ #item-3:checked ~ .cards #img-1{
+    transform: translate(0) scale(.9);
+  
+    z-index: 0;
+ }
+ #item-1:checked ~ .cards #img-1,
+ #item-2:checked ~ .cards #img-2,
+ #item-3:checked ~ .cards #img-3{
+    transform: translate(20%,20%) scale(1);
+   
+  
+    z-index: 1;
+ }
+ #item-1:checked ~ .cards #img-1 img,
+#item-2:checked ~ .cards #img-2 img,
+#item-3:checked ~ .cards #img-3 img{
+   box-shadow: 0 0 10px 0 rgba(81, 81,81,0.47);
+}
+
+.b-red{
+    border: red;
+}
+
+/* .imgsList {
+    position: relative;
+
+} 
 
 
 .imgsList img {
@@ -191,36 +261,34 @@ section h1 {
     box-shadow: -10px 10px 30px;
 }
 
-.imgsList>div {
+ .imgsList>div {
     position: absolute;
+    left: 0;
 }
 
 .img1 img {
-    margin: 30px 0 0 10px;
+    margin: 30px 0 0 2%;
     width: 300px;
     height: 200px;
 }
 
 .img2 img {
-    margin: 0 50px 0 50px;
+    margin: 0 50px 0 10%;
     width: 280px;
     height: 250px;
     
 }
 
 .img3 img {
-    margin: 60px 0 0 100px;
+    margin: 60px 0 0 20%;
     width: 300px;
     height: 200px;
 
 }
-.teste{
-    position: relative;
-    border: 1px solid red;
+ 
 
-    height:150px;
-}
 .teste > img{
     position: absolute;
     height: 150px;
 }
+*/
